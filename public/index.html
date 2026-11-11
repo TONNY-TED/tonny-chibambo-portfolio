@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tonny Chibambo - Portfolio</title>
+    <meta
+      name="description"
+      content="Professional personal portfolio website for Tonny Chibambo, Computer Science Student and Software Developer."
+    />
+    <meta property="og:title" content="Tonny Chibambo - Portfolio" />
+    <meta
+      property="og:description"
+      content="Professional personal portfolio website for Tonny Chibambo, Computer Science Student and Software Developer."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts: Outfit (Headings), Plus Jakarta Sans (Body), JetBrains Mono (Code) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Vanilla JavaScript File -->
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- =====================================================================
+         SITE HEADER: TOP BAR CONTRACT (Zone 1: Brand | Zone 2: Nav | Zone 3: Action)
+         ===================================================================== -->
+    <header class="site-header" role="banner">
+      <div class="container nav-container">
+        <!-- Zone 1: Single-Line Brand Wordmark -->
+        <a href="index.html" class="brand-link" aria-label="Tonny Chibambo Homepage">
+          <span class="brand-badge" aria-hidden="true">TC</span>
+          <span>TONNY CHIBAMBO</span>
+        </a>
+
+        <!-- Zone 2: Navigation Links (Single-Line, 4 Clean Links) -->
+        <nav id="navMenu" class="nav-menu" role="navigation" aria-label="Main Navigation">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="about.html" class="nav-link">About Me</a>
+          <a href="projects.html" class="nav-link">Projects</a>
+          <a href="animations.html" class="nav-link">Animated Concepts</a>
+        </nav>
+
+        <!-- Zone 3: Primary Action & Mobile Hamburger -->
+        <div class="nav-actions">
+          <button
+            id="navToggle"
+            class="nav-toggle"
+            type="button"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="navMenu"
+          >
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- =====================================================================
+         MAIN CONTENT AREA
+         ===================================================================== -->
+    <main id="mainContent">
+      <!-- -----------------------------------------------------------------
+           HERO SECTION (Matching Inspiration Layout & Styling)
+           ----------------------------------------------------------------- -->
+      <section class="hero-section" aria-labelledby="heroHeading">
+        <div class="container hero-grid">
+          <!-- Left Column: Typography, Statement, Buttons & Stats -->
+          <div class="hero-content reveal reveal-left">
+            <!-- Top Pill Badge -->
+            <div class="hero-badge-pill">
+              <span class="badge-dot" aria-hidden="true"></span>
+              <span>COMPUTER SCIENCE SCHOLAR & DEVELOPER</span>
+            </div>
+
+            <!-- Main Heading Name & Subtitle -->
+            <h1 id="heroHeading" class="hero-title">
+              Tonny Chibambo
+            </h1>
+            <h2 class="hero-subtitle">
+              Crafting dependable software systems & digital solutions.
+            </h2>
+
+            <!-- Typing Animation Container -->
+            <div class="hero-typewriter-container justify-center" aria-live="polite" style="margin-top: 1rem;">
+              <span id="typewriterText">Computer Science Student</span>
+              <span class="typewriter-cursor" aria-hidden="true"></span>
+            </div>
+
+            <!-- Quote Statement -->
+            <blockquote class="hero-quote">
+              "I build thoughtful software applications, database systems, and interactive digital experiences that solve real-world problems with clarity and reliability."
+            </blockquote>
+
+            <!-- Call-to-Action Buttons -->
+            <div class="button-group hero-buttons">
+              <a href="projects.html" class="btn btn-dark btn-lg">
+                <span>View My Work</span>
+                <span aria-hidden="true">&darr;</span>
+              </a>
+            </div>
+
+            <!-- Horizontal Divider -->
+            <hr class="hero-divider" />
+
+            <!-- 3 Stat Metrics Strip -->
+            <div class="hero-stats-strip">
+              <div class="stat-item">
+                <strong class="stat-value">2024 – 2027</strong>
+                <span class="stat-label">BSc Computer Science</span>
+              </div>
+              <div class="stat-item">
+                <strong class="stat-value">8+</strong>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+              <div class="stat-item">
+                <strong class="stat-value">100%</strong>
+                <span class="stat-label">Academic Focus</span>
+              </div>
+            </div>
+
+            <!-- Social Links Strip -->
+            <div class="social-links hero-socials" aria-label="Social Links">
+              <a href="mailto:tonnychibambo@gmail.com" class="social-link-pill" title="Email Tonny Chibambo">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                <span>Gmail</span>
+              </a>
+              <a href="https://github.com/TONNY-TED" target="_blank" rel="noopener noreferrer" class="social-link-pill" title="GitHub Profile">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                <span>GitHub</span>
+              </a>
+              <a href="https://www.linkedin.com/in/tonny-chibambo-2b9249334/" target="_blank" rel="noopener noreferrer" class="social-link-pill" title="LinkedIn Profile">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Tall Profile Photography Card Frame -->
+          <div class="hero-media-wrapper reveal reveal-right reveal-delay-2">
+            <div class="hero-card-frame">
+              <div class="hero-card-img-wrapper">
+                <img
+                  src="images/tonny.png"
+                  alt="Tonny Chibambo"
+                  class="hero-card-img clickable-img"
+                  data-lightbox="true"
+                  data-caption="Tonny Chibambo - Profile Photograph"
+                  title="Click to view full preview"
+                  onerror="if(!this.dataset.tried){this.dataset.tried='1';this.src='images/tonny.png';}"
+                />
+              </div>
+              <!-- Floating Info Card Strip at Bottom of Card -->
+              <div class="hero-card-info-badge">
+                <div class="info-badge-text">
+                  <strong>Tonny Chibambo</strong>
+                  <span>Based in Blantyre, Malawi • DMI University</span>
+                </div>
+                <span class="info-badge-dot" aria-hidden="true"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- -----------------------------------------------------------------
+           SECTION: PROFESSIONAL PILLARS & AREAS OF FOCUS
+           ----------------------------------------------------------------- -->
+      <section class="section section-alt" aria-labelledby="focusHeading">
+        <div class="container">
+          <div class="section-header text-center reveal">
+            <span class="section-kicker">Core Specialisations</span>
+            <h2 id="focusHeading" class="section-title">Areas of Professional Interest</h2>
+            <p class="section-description">
+              My academic pursuits and independent software explorations centre around core pillars
+              driving contemporary computer science and industry innovation.
+            </p>
+          </div>
+
+          <div class="grid-4">
+            <!-- Pillar 1: Software Engineering -->
+            <article class="card reveal reveal-scale reveal-delay-1">
+              <div class="card-header">
+                <span class="section-kicker">01. Architecture</span>
+                <h3 class="card-title">Software Engineering</h3>
+              </div>
+              <div class="card-body">
+                <p>
+                  Designing maintainable, scalable and modular systems applying object-oriented design,
+                  clean architectural principles, and test-driven development methodologies.
+                </p>
+              </div>
+            </article>
+
+            <!-- Pillar 2: Artificial Intelligence -->
+            <article class="card reveal reveal-scale reveal-delay-2">
+              <div class="card-header">
+                <span class="section-kicker">02. Intelligence</span>
+                <h3 class="card-title">Artificial Intelligence</h3>
+              </div>
+              <div class="card-body">
+                <p>
+                  Exploring algorithmic problem solving, machine learning fundamentals, data modeling,
+                  and intelligent automated decision systems to address real-world challenges.
+                </p>
+              </div>
+            </article>
+
+            <!-- Pillar 3: Cybersecurity -->
+            <article class="card reveal reveal-scale reveal-delay-3">
+              <div class="card-header">
+                <span class="section-kicker">03. Defense</span>
+                <h3 class="card-title">Cybersecurity</h3>
+              </div>
+              <div class="card-body">
+                <p>
+                  Understanding computer network protocols, secure software lifecycles, vulnerability
+                  mitigation, access control systems, and data protection strategies.
+                </p>
+              </div>
+            </article>
+
+            <!-- Pillar 4: Web & Digital Transformation -->
+            <article class="card reveal reveal-scale reveal-delay-4">
+              <div class="card-header">
+                <span class="section-kicker">04. Innovation</span>
+                <h3 class="card-title">Web & Digital Solutions</h3>
+              </div>
+              <div class="card-body">
+                <p>
+                  Developing responsive, high-performance web applications following semantic standards,
+                  modern responsive styling, and accessible human-centred interfaces.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- -----------------------------------------------------------------
+           SECTION: FEATURED HIGHLIGHTS & INTRODUCTORY OVERVIEW
+           ----------------------------------------------------------------- -->
+      <section class="section" aria-labelledby="overviewHeading">
+        <div class="container">
+          <div class="grid-2">
+            <!-- Left: Academic Profile Summary -->
+            <div class="reveal reveal-left">
+              <span class="section-kicker">Academic Commitment</span>
+              <h2 id="overviewHeading" class="section-title">
+                Driven by Passion for <u>Problem Solving</u>
+              </h2>
+              <p>
+                As a Computer Science scholar at <strong>DMI St. John the Baptist University</strong>, my coursework
+                and independent programming projects aim to bridge theoretical computing concepts with
+                concrete, production-ready software solutions.
+              </p>
+              <p>
+                I believe that <em>well-structured software</em> is the catalyst for meaningful
+                digital transformation. Whether developing healthcare assistance applications,
+                academic record systems, or standards-compliant web interfaces, my focus remains
+                uncompromising on code clarity and user reliability.
+              </p>
+
+              <hr style="border: none; border-top: 1px solid var(--color-border); margin: 1.5rem 0;" />
+
+              <h4 style="margin-bottom: 0.75rem;">Guiding Engineering Principles:</h4>
+              <ol style="margin-bottom: 1.5rem;">
+                <li>Rigorous attention to algorithm efficiency and data structures.</li>
+                <li>Clean, readable code with comprehensive documentation and semantic clarity.</li>
+                <li>Continuous technical learning and adaptation to emerging technologies.</li>
+              </ol>
+
+              <a href="about.html" class="btn btn-outline">Explore Full Biography & Education &rarr;</a>
+            </div>
+
+            <!-- Right: Project Teaser Card -->
+            <div class="reveal reveal-right reveal-delay-2">
+              <div class="card" style="height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                  <span class="section-kicker">Featured Practical Work</span>
+                  <h3 class="card-title">Hands-On Application Development</h3>
+                  <p>
+                    Practical projects provide the ultimate test of software engineering proficiency.
+                    Browse my completed and ongoing applications covering mobile platforms, enterprise
+                    management systems, and responsive web portals.
+                  </p>
+
+                  <div style="margin: 1.5rem 0;">
+                    <ul style="list-style: square;">
+                      <li><strong>VoiceHealth:</strong> Healthcare Assistance Application (Flutter & Dart)</li>
+                      <li><strong>Student Management System:</strong> Academic Records & Enrolment Portal</li>
+                      <li><strong>Personal Portfolio:</strong> Responsive HTML5, CSS3 & JavaScript Showcase</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="button-group" style="margin-top: 1.5rem;">
+                  <a href="projects.html" class="btn btn-primary">Browse Project Showcase</a>
+                  <a href="animations.html" class="btn btn-secondary">View Animated Concepts</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =====================================================================
+         LIGHTBOX MODAL FOR CLICKABLE PLACEHOLDER IMAGES
+         ===================================================================== -->
+    <div
+      id="lightboxModal"
+      class="lightbox-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+      aria-label="Image Preview Modal"
+    >
+      <div class="lightbox-content">
+        <img id="lightboxImg" class="lightbox-img" src="" alt="Enlarged view" />
+        <div class="lightbox-caption">
+          <div class="lightbox-caption-text">
+            <strong id="lightboxCaption">Image Preview</strong>
+            <span>Placeholder container - easily replaceable with your photograph</span>
+          </div>
+          <button id="lightboxClose" class="lightbox-close-btn" type="button" aria-label="Close modal">
+            &times;
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- =====================================================================
+         SITE FOOTER
+         ===================================================================== -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Column 1: Brand & Bio -->
+          <div class="footer-brand">
+            <h4>TONNY CHIBAMBO</h4>
+            <p>
+              Computer Science Student & Software Developer. Dedicated to building innovative,
+              resilient software solutions and exploring modern technology frontiers.
+            </p>
+          </div>
+
+          <!-- Column 2: Navigation Links -->
+          <div class="footer-col">
+            <h5>Navigation</h5>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Me</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="animations.html">Animated Concepts</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Contact & Icons -->
+          <div class="footer-col">
+            <h5>Connect</h5>
+            <ul class="footer-links">
+              <li>
+                <a href="mailto:tonnychibambo@gmail.com" title="Send email to Tonny Chibambo">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                  <span>tonnychibambo@gmail.com</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/TONNY-TED" target="_blank" rel="noopener noreferrer" title="Tonny Chibambo GitHub Profile">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                  <span>GitHub</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/tonny-chibambo-2b9249334/" target="_blank" rel="noopener noreferrer" title="Tonny Chibambo LinkedIn Profile">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                  <span>LinkedIn</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2026 <strong>TONNY CHIBAMBO</strong>. Academic Portfolio. Built with HTML5, CSS3 & JavaScript.
+          </p>
+          <p>
+            <span>Blantyre, Malawi</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

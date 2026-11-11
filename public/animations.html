@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Concepts - Tonny Chibambo | CSS3 & JS Animation Lab</title>
+    <meta
+      name="description"
+      content="Interactive demonstrations of CSS3 and JavaScript animations: dynamic typing, hover effects, floating animated background, skill indicators, and scroll reveals."
+    />
+    <meta property="og:title" content="Animated Concepts - Tonny Chibambo" />
+    <meta
+      property="og:description"
+      content="CSS3 and vanilla JavaScript animation laboratory demonstrating smooth modern front-end motion concepts."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Script -->
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- =====================================================================
+         SITE HEADER: TOP BAR CONTRACT
+         ===================================================================== -->
+    <header class="site-header" role="banner">
+      <div class="container nav-container">
+        <!-- Zone 1: Brand Wordmark -->
+        <a href="index.html" class="brand-link" aria-label="Tonny Chibambo Homepage">
+          <span class="brand-badge" aria-hidden="true">TC</span>
+          <span>TONNY CHIBAMBO</span>
+        </a>
+
+        <!-- Zone 2: Navigation Links -->
+        <nav id="navMenu" class="nav-menu" role="navigation" aria-label="Main Navigation">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About Me</a>
+          <a href="projects.html" class="nav-link">Projects</a>
+          <a href="animations.html" class="nav-link active">Animated Concepts</a>
+        </nav>
+
+        <!-- Zone 3: Primary Action & Mobile Hamburger -->
+        <div class="nav-actions">
+          <a href="index.html" class="btn btn-outline btn-sm">&larr; Back to Home</a>
+          <button
+            id="navToggle"
+            class="nav-toggle"
+            type="button"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="navMenu"
+          >
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- =====================================================================
+         MAIN CONTENT: ANIMATED CONCEPTS
+         ===================================================================== -->
+    <main id="mainContent">
+      <!-- -----------------------------------------------------------------
+           HERO HEADER FOR ANIMATIONS LAB
+           ----------------------------------------------------------------- -->
+      <section class="section" aria-labelledby="labHeading">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-kicker">Interactive Demonstration</span>
+            <h1 id="labHeading" class="section-title">Animated Concepts Showcase</h1>
+            <p class="section-description">
+              Interactive demonstrations of CSS3 keyframe motion, custom transitions, typing effects, and scroll triggers.
+            </p>
+          <!-- Interactive Animation Category Tabs with Smooth Transition -->
+          <div class="tab-container text-center reveal" style="text-align: center; margin-bottom: 2.5rem;">
+            <div class="tab-nav" role="tablist" aria-label="Animation Categories">
+              <button
+                type="button"
+                class="tab-btn anim-tab-btn active"
+                role="tab"
+                aria-selected="true"
+                data-anim-filter="all"
+              >
+                <span>All Concepts</span>
+                <span class="tab-count">5</span>
+              </button>
+              <button
+                type="button"
+                class="tab-btn anim-tab-btn"
+                role="tab"
+                aria-selected="false"
+                data-anim-filter="text"
+              >
+                <span>Text Typing</span>
+                <span class="tab-count">01</span>
+              </button>
+              <button
+                type="button"
+                class="tab-btn anim-tab-btn"
+                role="tab"
+                aria-selected="false"
+                data-anim-filter="hover"
+              >
+                <span>Hover Effects</span>
+                <span class="tab-count">02</span>
+              </button>
+              <button
+                type="button"
+                class="tab-btn anim-tab-btn"
+                role="tab"
+                aria-selected="false"
+                data-anim-filter="background"
+              >
+                <span>Background</span>
+                <span class="tab-count">03</span>
+              </button>
+              <button
+                type="button"
+                class="tab-btn anim-tab-btn"
+                role="tab"
+                aria-selected="false"
+                data-anim-filter="skills"
+              >
+                <span>Skill Bars</span>
+                <span class="tab-count">04</span>
+              </button>
+              <button
+                type="button"
+                class="tab-btn anim-tab-btn"
+                role="tab"
+                aria-selected="false"
+                data-anim-filter="scroll"
+              >
+                <span>Scroll Reveals</span>
+                <span class="tab-count">05</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- ---------------------------------------------------------------
+               CONCEPT 1: ANIMATED TEXT (TYPING & DELETING SIMULATION)
+               --------------------------------------------------------------- -->
+          <article class="anim-card reveal" data-concept="text">
+            <div class="anim-card-header">
+              <div>
+                <span class="section-kicker">Concept 01</span>
+                <h2 class="anim-card-title">Animated Text: Typing & Deleting Engine</h2>
+                <p class="anim-card-desc">
+                  Simulates a terminal / human typist cycling through descriptions character by character
+                  with dynamic blinking cursor, backspace simulation, and adjustable inputs.
+                </p>
+              </div>
+              <span class="placeholder-badge">Vanilla JS + CSS Blink</span>
+            </div>
+
+            <div class="type-test-box">
+              <div class="interactive-type-text">
+                I am a <span id="customTypeOutput" class="highlight">Computer Science Student</span>
+                <span class="typewriter-cursor" aria-hidden="true"></span>
+              </div>
+            </div>
+
+            <div class="type-controls">
+              <label for="customTextInput" style="font-size: 0.9rem; color: var(--color-text-secondary);">
+                Test Custom Text Typing:
+              </label>
+              <input
+                id="customTextInput"
+                type="text"
+                placeholder="Type your own phrase here (e.g. Cybersecurity Specialist)..."
+                style="flex: 1; min-width: 260px; padding: 0.65rem 1rem; border-radius: var(--radius-sm); border: 1px solid var(--color-border); background: var(--color-bg-secondary); color: var(--color-text-primary); font-family: var(--font-body); font-size: 0.9rem;"
+              />
+              <button id="customTypeTrigger" class="btn btn-primary btn-sm" type="button">
+                Run Typing Simulation
+              </button>
+            </div>
+
+            <div style="margin-top: 1.5rem; padding: 1rem; background: var(--color-bg-secondary); border-radius: var(--radius-sm); font-size: 0.85rem; color: var(--color-text-muted);">
+              <strong>Technical Implementation:</strong> Uses a JavaScript timeout recursion loop to slice strings
+              (<code>substring(0, charIndex)</code>), alternating between forward typing and deletion stages,
+              paired with a pure CSS <code>@keyframes cursorBlink</code> opacity toggle.
+            </div>
+          </article>
+
+          <!-- ---------------------------------------------------------------
+               CONCEPT 2: HOVER EFFECTS (BUTTONS, CARDS, IMAGES, NAV)
+               --------------------------------------------------------------- -->
+          <article class="anim-card reveal" data-concept="hover">
+            <div class="anim-card-header">
+              <div>
+                <span class="section-kicker">Concept 02</span>
+                <h2 class="anim-card-title">Micro-Interaction Hover Effects</h2>
+                <p class="anim-card-desc">
+                  High-intent, performant hover feedback using hardware-accelerated transforms,
+                  gradient glows, and border transitions settling within &le; 200ms.
+                </p>
+              </div>
+              <span class="placeholder-badge">CSS3 Transforms & Transitions</span>
+            </div>
+
+            <div class="hover-showcase-grid">
+              <!-- Hover Item 1: Lift & Elevation -->
+              <div class="hover-item hover-lift">
+                <div style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--color-accent-light);">&#8679;</div>
+                <h4 style="font-size: 1.05rem; margin-bottom: 0.35rem;">3D Lift & Shadow</h4>
+                <p style="font-size: 0.825rem; color: var(--color-text-secondary); margin: 0;">
+                  Elevates card with <code>transform: translateY(-8px)</code> and expands cyan drop shadow.
+                </p>
+              </div>
+
+              <!-- Hover Item 2: Gradient Sweep Border -->
+              <div class="hover-item hover-border">
+                <div style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--color-accent-light);">&#10022;</div>
+                <h4 style="font-size: 1.05rem; margin-bottom: 0.35rem;">Border Sweep Light</h4>
+                <p style="font-size: 0.825rem; color: var(--color-text-secondary); margin: 0;">
+                  Sweeps an illuminated gradient across the card surface on hover using a pseudo-element.
+                </p>
+              </div>
+
+              <!-- Hover Item 3: Scale & Surface Expansion -->
+              <div class="hover-item hover-scale">
+                <div style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--color-accent-light);">&#10530;</div>
+                <h4 style="font-size: 1.05rem; margin-bottom: 0.35rem;">Scale & Focus</h4>
+                <p style="font-size: 0.825rem; color: var(--color-text-secondary); margin: 0;">
+                  Subtle scale transformation (<code>scale(1.04)</code>) with background luminosity shift.
+                </p>
+              </div>
+
+              <!-- Hover Item 4: Color Inversion Glow -->
+              <div class="hover-item hover-invert">
+                <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">&#9733;</div>
+                <h4 style="font-size: 1.05rem; margin-bottom: 0.35rem;">Accent Flood</h4>
+                <p style="font-size: 0.825rem; color: var(--color-text-secondary); margin: 0;">
+                  Transitions the background to rich cobalt gradient with instant high-contrast typography.
+                </p>
+              </div>
+            </div>
+
+            <!-- Image Hover Example -->
+            <div style="margin-top: 2rem;">
+              <h4 style="font-size: 1.05rem; margin-bottom: 1rem;">Image Hover Zoom & Lightbox Trigger:</h4>
+              <div class="grid-2">
+                <div style="border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--color-border); position: relative; max-height: 220px;">
+                  <img
+                    src="images/profile.png"
+                    alt="Hover test profile image"
+                    class="clickable-img"
+                    data-lightbox="true"
+                    data-caption="Profile Hover Showcase: Smooth 1.05x scale on mouseover"
+                    style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; cursor: pointer;"
+                    onerror="if(!this.dataset.tried){this.dataset.tried='1';this.src='images/profile-placeholder.png';}"
+                  />
+                  <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 0.75rem 1rem; background: rgba(255, 255, 255, 0.92); border-top: 1px solid var(--color-border); font-size: 0.8rem; color: var(--color-text-primary);">
+                    Hover over image to preview smooth zoom; click to inspect modal.
+                  </div>
+                </div>
+
+                <div style="display: flex; flex-direction: column; justify-content: center; gap: 1rem;">
+                  <p style="font-size: 0.9rem; margin: 0;">
+                    Interactive controls adhere to strict compositor optimization (only <code>transform</code>,
+                    <code>opacity</code>, and <code>box-shadow</code> are animated, avoiding browser layout recalculations).
+                  </p>
+                  <div class="button-group">
+                    <button type="button" class="btn btn-primary btn-sm">Primary Hover State</button>
+                    <button type="button" class="btn btn-secondary btn-sm">Secondary Hover State</button>
+                    <button type="button" class="btn btn-outline btn-sm">Outline Hover State</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- ---------------------------------------------------------------
+               CONCEPT 3: ANIMATED BACKGROUND (GRADIENT & FLOATING PARTICLES)
+               --------------------------------------------------------------- -->
+          <article class="anim-card reveal" data-concept="background">
+            <div class="anim-card-header">
+              <div>
+                <span class="section-kicker">Concept 03</span>
+                <h2 class="anim-card-title">Animated Background: Dynamic Gradient & Floating Orbs</h2>
+                <p class="anim-card-desc">
+                  A subtle animated gradient mesh background combined with drifting geometric orbs
+                  illustrating pure CSS keyframe choreography.
+                </p>
+              </div>
+              <button id="toggleBgAnimBtn" class="btn btn-secondary btn-sm" type="button">
+                Pause Background Animation
+              </button>
+            </div>
+
+            <!-- Sandbox Container -->
+            <div id="animatedBgSandbox" class="animated-bg-sandbox">
+              <div class="floating-shape shape-1"></div>
+              <div class="floating-shape shape-2"></div>
+              <div class="floating-shape shape-3"></div>
+
+              <div class="animated-bg-content">
+                <h3 style="font-size: 1.35rem; margin-bottom: 0.35rem; color: #ffffff;">
+                  CSS Keyframe Background Sandbox
+                </h3>
+                <p style="font-size: 0.9rem; color: var(--color-text-secondary); margin-bottom: 0;">
+                  Background uses <code>@keyframes gradientShift</code> across 400% background-size,
+                  while orbs float using <code>@keyframes floatOrb</code> with alternating phase delays.
+                </p>
+              </div>
+            </div>
+
+            <div style="margin-top: 1rem; font-size: 0.85rem; color: var(--color-text-muted);">
+              <strong>User Accessibility:</strong> Respects user preferences. When paused,
+              the animation freezes immediately via <code>animation-play-state: paused</code>.
+            </div>
+          </article>
+
+          <!-- ---------------------------------------------------------------
+               CONCEPT 4: ANIMATED SKILL INDICATORS
+               --------------------------------------------------------------- -->
+          <article class="anim-card reveal" data-concept="skills">
+            <div class="anim-card-header">
+              <div>
+                <span class="section-kicker">Concept 04</span>
+                <h2 class="anim-card-title">Animated Skill Progress Indicators</h2>
+                <p class="anim-card-desc">
+                  Smooth progress bars that glide from 0% to target capacity when scrolled into view,
+                  accentuated with refined glowing gradient fills.
+                </p>
+              </div>
+              <button id="replaySkillsBtn" class="btn btn-primary btn-sm" type="button">
+                &#8634; Replay Progress Animation
+              </button>
+            </div>
+
+            <div class="skills-grid">
+              <div class="skill-card">
+                <div class="skill-info">
+                  <span class="skill-name">Java Programming & OOP</span>
+                  <span class="skill-percentage">75%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-percentage="75%" style="width: 0%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-info">
+                  <span class="skill-name">Python Algorithms & Scripting</span>
+                  <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-percentage="80%" style="width: 0%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-info">
+                  <span class="skill-name">Relational Database Management (MySQL)</span>
+                  <span class="skill-percentage">75%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-percentage="75%" style="width: 0%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-info">
+                  <span class="skill-name">Cybersecurity & Network Defense</span>
+                  <span class="skill-percentage">68%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-percentage="68%" style="width: 0%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 1.25rem;">
+              Click <em>"Replay Progress Animation"</em> above to reset widths to 0% and watch the
+              1.2s smooth cubic-bezier transition re-execute in real time.
+            </p>
+          </article>
+
+          <!-- ---------------------------------------------------------------
+               CONCEPT 5: SCROLLING ANIMATIONS (REVEAL ON SCROLL)
+               --------------------------------------------------------------- -->
+          <article class="anim-card reveal" data-concept="scroll">
+            <div class="anim-card-header">
+              <div>
+                <span class="section-kicker">Concept 05</span>
+                <h2 class="anim-card-title">Scroll Reveal & Viewport Observer</h2>
+                <p class="anim-card-desc">
+                  Sections, cards, and data points smoothly glide into view as the user scrolls,
+                  powered by the native <code>IntersectionObserver</code> API.
+                </p>
+              </div>
+              <span class="placeholder-badge">IntersectionObserver + Staggered Delay</span>
+            </div>
+
+            <div class="scroll-mockup-wrapper">
+              <div class="reveal-demo-item reveal reveal-delay-1">
+                <div>
+                  <strong style="color: var(--color-text-primary); display: block;">Staggered Item A (0.1s delay)</strong>
+                  <span style="font-size: 0.85rem; color: var(--color-text-secondary);">
+                    Triggers as soon as 15% of the element breaches the viewport bottom threshold.
+                  </span>
+                </div>
+                <span class="placeholder-badge">Threshold: 0.15</span>
+              </div>
+
+              <div class="reveal-demo-item reveal reveal-delay-2">
+                <div>
+                  <strong style="color: var(--color-text-primary); display: block;">Staggered Item B (0.2s delay)</strong>
+                  <span style="font-size: 0.85rem; color: var(--color-text-secondary);">
+                    Glides upward 28px while fading opacity from 0 to 1 with cubic-bezier easing.
+                  </span>
+                </div>
+                <span class="placeholder-badge">Easing: cubic-bezier</span>
+              </div>
+
+              <div class="reveal-demo-item reveal reveal-delay-3">
+                <div>
+                  <strong style="color: var(--color-text-primary); display: block;">Staggered Item C (0.3s delay)</strong>
+                  <span style="font-size: 0.85rem; color: var(--color-text-secondary);">
+                    Automatically disconnects observation after revealing to conserve client CPU cycles.
+                  </span>
+                </div>
+                <span class="placeholder-badge">Memory Optimized</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- =====================================================================
+         LIGHTBOX MODAL
+         ===================================================================== -->
+    <div
+      id="lightboxModal"
+      class="lightbox-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+      aria-label="Image Preview Modal"
+    >
+      <div class="lightbox-content">
+        <img id="lightboxImg" class="lightbox-img" src="" alt="Enlarged view" />
+        <div class="lightbox-caption">
+          <div class="lightbox-caption-text">
+            <strong id="lightboxCaption">Image Preview</strong>
+            <span>Placeholder container - easily replaceable with your photograph</span>
+          </div>
+          <button id="lightboxClose" class="lightbox-close-btn" type="button" aria-label="Close modal">
+            &times;
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- =====================================================================
+         SITE FOOTER
+         ===================================================================== -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <h4>TONNY CHIBAMBO</h4>
+            <p>
+              Computer Science Student & Software Developer. Dedicated to building innovative,
+              resilient software solutions and exploring modern technology frontiers.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h5>Navigation</h5>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Me</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="animations.html">Animated Concepts</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h5>Connect</h5>
+            <ul class="footer-links">
+              <li>
+                <a href="mailto:tonnychibambo@gmail.com" title="Send email to Tonny Chibambo">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                  <span>tonnychibambo@gmail.com</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/TONNY-TED" target="_blank" rel="noopener noreferrer" title="Tonny Chibambo GitHub Profile">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                  <span>GitHub</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/tonny-chibambo-2b9249334/" target="_blank" rel="noopener noreferrer" title="Tonny Chibambo LinkedIn Profile">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                  <span>LinkedIn</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2026 <strong>TONNY CHIBAMBO</strong>. Academic Portfolio. Built with HTML5, CSS3 & JavaScript.
+          </p>
+          <p>
+            <span>Blantyre, Malawi</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

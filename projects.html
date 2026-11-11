@@ -1,0 +1,991 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects Showcase - Tonny Chibambo | Computer Science Portfolio</title>
+    <meta
+      name="description"
+      content="Explore software engineering projects developed by Tonny Chibambo, including VoiceHealth, Student Management System, and personal web applications."
+    />
+    <meta property="og:title" content="Projects Showcase - Tonny Chibambo" />
+    <meta
+      property="og:description"
+      content="Software engineering projects, problem statements, tech stacks, and repository links by Tonny Chibambo."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Script -->
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- =====================================================================
+         SITE HEADER: TOP BAR CONTRACT
+         ===================================================================== -->
+    <header class="site-header" role="banner">
+      <div class="container nav-container">
+        <!-- Zone 1: Brand Wordmark -->
+        <a href="index.html" class="brand-link" aria-label="Tonny Chibambo Homepage">
+          <span class="brand-badge" aria-hidden="true">TC</span>
+          <span>TONNY CHIBAMBO</span>
+        </a>
+
+        <!-- Zone 2: Navigation Links -->
+        <nav id="navMenu" class="nav-menu" role="navigation" aria-label="Main Navigation">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About Me</a>
+          <a href="projects.html" class="nav-link active">Projects</a>
+          <a href="animations.html" class="nav-link">Animated Concepts</a>
+        </nav>
+
+        <!-- Zone 3: Primary Action & Mobile Hamburger -->
+        <div class="nav-actions">
+          <a
+            href="https://github.com/TONNY-TED"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline btn-sm"
+          >
+            GitHub Profile
+          </a>
+          <button
+            id="navToggle"
+            class="nav-toggle"
+            type="button"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="navMenu"
+          >
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- =====================================================================
+         MAIN CONTENT: PROJECTS SHOWCASE
+         ===================================================================== -->
+    <main id="mainContent">
+      <!-- -----------------------------------------------------------------
+           SECTION: HERO INTRO & GITHUB PROFILE HIGHLIGHT
+           ----------------------------------------------------------------- -->
+      <section class="section" aria-labelledby="projectsHeading">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-kicker">Software Development Portfolio</span>
+            <h1 id="projectsHeading" class="section-title">Academic & Practical Projects</h1>
+            <p class="section-description">
+              A curated showcase of software applications, system implementations, and responsive
+              web platforms designed to solve real-world problems.
+            </p>
+          </div>
+
+          <!-- Notice banner on repository placeholders -->
+          <div class="card reveal" style="margin-bottom: 3rem; background: rgba(128, 0, 32, 0.04); border: 1px dashed rgba(128, 0, 32, 0.25); padding: 1.5rem 2rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+              <div>
+                <h4 style="font-size: 1.05rem; margin-bottom: 0.25rem; color: var(--color-text-accent);">
+                  Live GitHub Repository Integration
+                </h4>
+                <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin: 0;">
+                  Source code repositories, engineering schematics, and release packages are published under
+                  Tonny Chibambo's official GitHub account (<code>github.com/TONNY-TED</code>). Click any project link to explore.
+                </p>
+              </div>
+              <a
+                href="https://github.com/TONNY-TED"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary btn-sm"
+              >
+                Main GitHub Profile: <code>github.com/TONNY-TED</code> &rarr;
+              </a>
+            </div>
+          <!-- Interactive Category Filter Tabs with Smooth Transition -->
+          <div class="tab-container text-center reveal" style="text-align: center; margin-bottom: 2.5rem;">
+            <div class="tab-nav" role="tablist" aria-label="Project Category Filter">
+              <button
+                type="button"
+                class="tab-btn filter-tab-btn active"
+                role="tab"
+                aria-selected="true"
+                data-filter="all"
+              >
+                <span>All Projects</span>
+                <span class="tab-count">8</span>
+              </button>
+              <button
+                type="button"
+                class="tab-btn filter-tab-btn"
+                role="tab"
+                aria-selected="false"
+                data-filter="web"
+              >
+                <span>Web Applications</span>
+                <span class="tab-count">3</span>
+              </button>
+              <button
+                type="button"
+                class="tab-btn filter-tab-btn"
+                role="tab"
+                aria-selected="false"
+                data-filter="iot"
+              >
+                <span>IoT & Robotics</span>
+                <span class="tab-count">2</span>
+              </button>
+              <button
+                type="button"
+                class="tab-btn filter-tab-btn"
+                role="tab"
+                aria-selected="false"
+                data-filter="mobile"
+              >
+                <span>Mobile Apps</span>
+                <span class="tab-count">1</span>
+              </button>
+              <button
+                type="button"
+                class="tab-btn filter-tab-btn"
+                role="tab"
+                aria-selected="false"
+                data-filter="systems"
+              >
+                <span>Systems & DB</span>
+                <span class="tab-count">1</span>
+              </button>
+              <button
+                type="button"
+                class="tab-btn filter-tab-btn"
+                role="tab"
+                aria-selected="false"
+                data-filter="branding"
+              >
+                <span>Branding & Design</span>
+                <span class="tab-count">1</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- ---------------------------------------------------------------
+               PROJECT CARDS SHOWCASE (GRID 3)
+               --------------------------------------------------------------- -->
+          <div class="grid-3" id="projectsGrid">
+            <!-- PROJECT 1: VoiceHealth -->
+            <article class="card project-card reveal reveal-delay-1 filter-show" data-category="mobile" aria-labelledby="p1Title">
+              <div class="project-thumbnail-wrapper">
+                <img
+                  src="images/voice.png"
+                  alt="VoiceHealth project interface screenshot"
+                  class="project-thumbnail clickable-img"
+                  data-lightbox="true"
+                  data-caption="Project 1: VoiceHealth - Healthcare Assistance Application (Flutter & Dart)"
+                  title="Click to inspect preview image"
+                  onerror="if(!this.dataset.tried){this.dataset.tried='1';this.src='images/project1-placeholder.png';}"
+                />
+                <span class="project-badge-overlay">Mobile Application</span>
+              </div>
+
+              <div class="project-content">
+                <div class="project-meta">
+                  <span>Mobile Health</span>
+                  <span aria-hidden="true">&bull;</span>
+                  <span>Cross-Platform</span>
+                  <span aria-hidden="true">&bull;</span>
+                  <span class="badge" style="background: rgba(14, 165, 233, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); padding: 0.15rem 0.5rem; border-radius: var(--radius-sm); font-size: 0.725rem;">Active Development</span>
+                </div>
+
+                <h3 id="p1Title" class="project-title">
+                  VoiceHealth – Healthcare Assistance Application
+                </h3>
+
+                <p class="project-description">
+                  A healthcare assistance application designed to help users access health-related
+                  information, symptom guidance, and interactive consultation assistance through an
+                  intuitive mobile interface.
+                </p>
+
+                <div class="project-problem">
+                  <strong>Problem Being Solved:</strong>
+                  <p style="margin: 0; font-size: 0.85rem; color: var(--color-text-secondary);">
+                    Many individuals face delays or geographical barriers when seeking preliminary
+                    medical advice. VoiceHealth provides an accessible, responsive mobile gateway
+                    for prompt health information retrieval and appointment organization.
+                  </p>
+                </div>
+
+                <div class="project-tech-stack">
+                  <strong>Technologies Used:</strong>
+                  <div class="project-tech-list">
+                    <span>Flutter</span>
+                    <span aria-hidden="true">&bull;</span>
+                    <span>Dart</span>
+                    <span aria-hidden="true">&bull;</span>
+                    <span>Mobile UI</span>
+                    <span aria-hidden="true">&bull;</span>
+                    <span>REST APIs</span>
+                  </div>
+                </div>
+
+                <div class="project-footer">
+                  <span style="font-size: 0.8rem; color: var(--color-text-muted);">
+                    Status: Prototype & Testing
+                  </span>
+                  <a
+                    href="https://github.com/TONNY-TED"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline btn-sm"
+                    title="View project on GitHub"
+                  >
+                    GitHub Repo &rarr;
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJECT 2: CareQueue -->
+            <article class="card project-card reveal reveal-delay-2 filter-show" data-category="web" aria-labelledby="p4Title">
+              <div class="project-thumbnail-wrapper">
+                <img
+                  src="images/care.png"
+                  alt="CareQueue hospital queue management screenshot"
+                  class="project-thumbnail clickable-img"
+                  data-lightbox="true"
+                  data-caption="CareQueue: Hospital Queue & Patient Flow Management System"
+                  title="Click to inspect preview image"
+                  onerror="if(!this.dataset.tried){this.dataset.tried='1';this.src='images/project4-placeholder.png';}"
+                />
+                <span class="project-badge-overlay">Web Application</span>
+              </div>
+
+              <div class="project-content">
+                <div class="project-meta">
+                  <span>#Healthcare Tech</span>
+                  <span aria-hidden="true">&bull;</span>
+                  <span>#Queue Management</span>
+                  <span aria-hidden="true">&bull;</span>
+                  <span>#Web App</span>
+                </div>
+
+                <h3 id="p4Title" class="project-title">
+                  CareQueue – Hospital Queue & Flow System
+                </h3>
+
+                <p class="project-description">
+                  The Hospital Queue & Patient Flow Management System streamlines medical clinic visits,
+                  patient triage, and digital appointments to minimize wait times and optimize staff allocation.
+                </p>
+
+                <div class="project-problem">
+                  <strong>Problem Being Solved:</strong>
+                  <p style="margin: 0; font-size: 0.85rem; color: var(--color-text-secondary);">
+                    Overcrowding, chaotic waiting rooms, and uncoordinated appointment workflows create
+                    severe stress for patients and medical staff. CareQueue digitalizes check-in and queuing.
+                  </p>
+                </div>
+
+                <div class="project-tech-stack">
+                  <strong>Technologies Used:</strong>
+                  <div class="project-tech-list">
+                    <span>Web Platform</span>
+                    <span aria-hidden="true">&bull;</span>
+                    <span>JavaScript (ES6+)</span>
+                    <span aria-hidden="true">&bull;</span>
+                    <span>REST APIs</span>
+                    <span aria-hidden="true">&bull;</span>
+                    <span>Triage Algorithms</span>
+                  </div>
+                </div>
+
+                <div class="project-footer">
+                  <span style="font-size: 0.8rem; color: var(--color-text-muted);">
+                    Status: Active Solution
+                  </span>
+                  <a
+                    href="https://github.com/TONNY-TED"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline btn-sm"
+                    title="View project on GitHub"
+                  >
+                    GitHub Repo &rarr;
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJECT 3: Funsa Suppliers Website -->
+            <article class="card project-card reveal reveal-delay-3 filter-show" data-category="web" aria-labelledby="p5Title">
+              <div class="project-thumbnail-wrapper">
+                <img
+                  src="images/funsa.png"
+                  alt="Funsa Suppliers corporate e-commerce platform screenshot"
+                  class="project-thumbnail clickable-img"
+                  data-lightbox="true"
+                  data-caption="Funsa Suppliers: Corporate & E-Commerce Supply Chain Platform"
+                  title="Click to inspect preview image"
+                  onerror="if(!this.dataset.tried){this.dataset.tried='1';this.src='images/project5-placeholder.png';}"
+                />
+                <span class="project-badge-overlay">Web Application</span>
+              </div>
+
+              <div class="project-content">
+                <div class="project-meta">
+                  <span>#Corporate Web</span>
+                  <span aria-hidden="true">&bull;</span>
+                  <span>#E-Commerce</span>
+                  <span aria-hidden="true">&bull;</span>
+                  <span>#Supply Chain</span>
+                </div>
+
+                <h3 id="p5Title" class="project-title">
+                  Funsa Suppliers Website
+                </h3>
+
+                <p class="project-description">
+                  Modern corporate & e-commerce supply chain platform for Funsa Suppliers, showcasing products,
+                  wholesale hardware, and commercial operations with digital ordering capabilities.
+                </p>
+
+                <div class="project-problem">
+                  <strong>Problem Being Solved:</strong>
+                  <p style="margin: 0; font-size: 0.85rem; color: var(--color-text-secondary);">
+                    Traditional supplier communication relies on phone calls and physical catalogs. This platform
+                    digitizes product inventory, quotation generation, and distributor order placement.
+                  </p>
+                </div>
+
+                <div class="project-tech-stack">
+                  <strong>Technologies Used:</strong>
+                  <div class="project-tech-list">
+                    <span>HTML5 / CSS3</span>
+                    <span aria-hidden="true">&bull;</span>
+                    <span>Responsive Layouts</span>
+                    <span aria-hidden="true">&bull;</span>
+                    <span>Product Catalog DB</span>
+                    <span aria-hidden="true">&bull;</span>
+                    <span>E-Commerce UX</span>
+                  </div>
+                </div>
+
+                <div class="project-footer">
+                  <span style="font-size: 0.8rem; color: var(--color-text-muted);">
+                    Status: Deployed Web Platform
+                  </span>
+                  <a
+                    href="https://github.com/TONNY-TED"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline btn-sm"
+                    title="View project on GitHub"
+                  >
+                    GitHub Repo &rarr;
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJECT 4: Smart Health Watch -->
+            <article class="card project-card reveal reveal-delay-1 filter-show" data-category="iot" aria-labelledby="p6Title">
+              <div class="project-thumbnail-wrapper">
+                <img
+                  src="images/watch.png"
+                  alt="Smart Health Watch IoT project screenshot"
+                  class="project-thumbnail clickable-img"
+                  data-lightbox="true"
+                  data-caption="Smart Health Watch: IoT Health Monitoring System"
+                  title="Click to inspect preview image"
+                  onerror="if(!this.dataset.tried){this.dataset.tried='1';this.src='images/project6-placeholder.png';}"
+                />
+                <span class="project-badge-overlay">IoT Project</span>
+              </div>
+
+              <div class="project-content">
+                <div class="project-meta">
+                  <span>#IoT</span>
+                  <span aria-hidden="true">&bull;</span>
+                  <span>#Embedded Sensors</span>
+                  <span aria-hidden="true">&bull;</span>
+                  <span>#Real-Time Telemetry</span>
+                </div>
+
+                <h3 id="p6Title" class="project-title">
+                  Smart Health Watch
+                </h3>
+
+                <p class="project-description">
+                  IoT-based health monitoring system tracking vital statistics and transmitting telemetry to
+                  clinical dashboards in real-time, providing proactive warnings for abnormal vital indicators.
+                </p>
+
+                <div class="project-problem">
+                  <strong>Problem Being Solved:</strong>
+                  <p style="margin: 0; font-size: 0.85rem; color: var(--color-text-secondary);">
+                    Patients with chronic ailments often cannot detect cardiovascular anomalies until acute events occur.
+                    Continuous wearable sensor telemetry enables early triage and life-saving interventions.
+                  </p>
+                </div>
+
+                <div class="project-tech-stack">
+                  <strong>Technologies Used:</strong>
+                  <div class="project-tech-list">
+                    <span>IoT Microcontrollers</span>
+                    <span aria-hidden="true">&bull;</span>
+                    <span>PPG / SpO2 Sensors</span>
+                    <span aria-hidden="true">&bull;</span>
+                    <span>MQTT Protocol</span>
+                    <span aria-hidden="true">&bull;</span>
+                    <span>Telemetry Dashboard</span>
+                  </div>
+                </div>
+
+                <div class="project-footer">
+                  <span style="font-size: 0.8rem; color: var(--color-text-muted);">
+                    Status: Hardware Prototype
+                  </span>
+                  <a
+                    href="https://github.com/TONNY-TED"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline btn-sm"
+                    title="View project on GitHub"
+                  >
+                    GitHub Repo &rarr;
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJECT 5: Surveillance & Exploration Robot -->
+            <article class="card project-card reveal reveal-delay-2 filter-show" data-category="iot" aria-labelledby="p7Title">
+              <div class="project-thumbnail-wrapper">
+                <img
+                  src="images/robot.png"
+                  alt="Surveillance and exploration robot project photo"
+                  class="project-thumbnail clickable-img"
+                  data-lightbox="true"
+                  data-caption="Surveillance & Exploration Robot: Camera & Obstacle Avoidance Robot"
+                  title="Click to inspect preview image"
+                  onerror="if(!this.dataset.tried){this.dataset.tried='1';this.src='images/project7-placeholder.png';}"
+                />
+                <span class="project-badge-overlay">IoT Project</span>
+              </div>
+
+              <div class="project-content">
+                <div class="project-meta">
+                  <span>#IoT Robotics</span>
+                  <span aria-hidden="true">&bull;</span>
+                  <span>#Remote Surveillance</span>
+                  <span aria-hidden="true">&bull;</span>
+                  <span>#Obstacle Avoidance</span>
+                </div>
+
+                <h3 id="p7Title" class="project-title">
+                  Surveillance & Exploration Robot
+                </h3>
+
+                <p class="project-description">
+                  This robot can be used to access and explore places that are difficult or unsafe for people to reach.
+                  Equipped with a camera to remotely monitor, inspect, and capture images or video, and an ultrasonic
+                  sensor to autonomously avoid obstacles.
+                </p>
+
+                <div class="project-problem">
+                  <strong>Problem Being Solved:</strong>
+                  <p style="margin: 0; font-size: 0.85rem; color: var(--color-text-secondary);">
+                    Hazardous physical inspections (confined conduits, industrial chemical tanks, collapse zones)
+                    endanger human personnel. This remotely steered rover provides eyes and telemetry safely.
+                  </p>
+                </div>
+
+                <div class="project-tech-stack">
+                  <strong>Technologies Used:</strong>
+                  <div class="project-tech-list">
+                    <span>Embedded Robotics</span>
+                    <span aria-hidden="true">&bull;</span>
+                    <span>Ultrasonic Sensors</span>
+                    <span aria-hidden="true">&bull;</span>
+                    <span>Wi-Fi Video Stream</span>
+                    <span aria-hidden="true">&bull;</span>
+                    <span>Motor Driver Logic</span>
+                  </div>
+                </div>
+
+                <div class="project-footer">
+                  <span style="font-size: 0.8rem; color: var(--color-text-muted);">
+                    Status: Robotics Solution
+                  </span>
+                  <a
+                    href="https://github.com/TONNY-TED"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline btn-sm"
+                    title="View project on GitHub"
+                  >
+                    GitHub Repo &rarr;
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJECT 6: Business Branding Package -->
+            <article class="card project-card reveal reveal-delay-3 filter-show" data-category="branding" aria-labelledby="p8Title">
+              <div class="project-thumbnail-wrapper">
+                <img
+                  src="images/branding.png"
+                  alt="Business branding package showcase"
+                  class="project-thumbnail clickable-img"
+                  data-lightbox="true"
+                  data-caption="Business Branding Package: Corporate Identity & Visual Collateral"
+                  title="Click to inspect preview image"
+                  onerror="if(!this.dataset.tried){this.dataset.tried='1';this.src='images/project8-placeholder.png';}"
+                />
+                <span class="project-badge-overlay">Branding & Design</span>
+              </div>
+
+              <div class="project-content">
+                <div class="project-meta">
+                  <span>#Logo Design</span>
+                  <span aria-hidden="true">&bull;</span>
+                  <span>#Brand Identity</span>
+                  <span aria-hidden="true">&bull;</span>
+                  <span>#Marketing Collateral</span>
+                </div>
+
+                <h3 id="p8Title" class="project-title">
+                  Business Branding Package
+                </h3>
+
+                <p class="project-description">
+                  Comprehensive brand identity, logo, typography system, posters, flyers, and digital marketing
+                  assets engineered for corporate clients to establish a distinct, memorable market presence.
+                </p>
+
+                <div class="project-problem">
+                  <strong>Problem Being Solved:</strong>
+                  <p style="margin: 0; font-size: 0.85rem; color: var(--color-text-secondary);">
+                    Fragmented, unpolished branding weakens corporate credibility and customer conversion rates.
+                    This package establishes a rigorous visual constitution and print/digital collateral guidelines.
+                  </p>
+                </div>
+
+                <div class="project-tech-stack">
+                  <strong>Technologies Used:</strong>
+                  <div class="project-tech-list">
+                    <span>Brand Strategy</span>
+                    <span aria-hidden="true">&bull;</span>
+                    <span>Vector Design</span>
+                    <span aria-hidden="true">&bull;</span>
+                    <span>Typography Hierarchy</span>
+                    <span aria-hidden="true">&bull;</span>
+                    <span>Print & Digital Collateral</span>
+                  </div>
+                </div>
+
+                <div class="project-footer">
+                  <span style="font-size: 0.8rem; color: var(--color-text-muted);">
+                    Status: Completed Design System
+                  </span>
+                  <a
+                    href="https://github.com/TONNY-TED"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline btn-sm"
+                    title="View project on GitHub"
+                  >
+                    GitHub Repo &rarr;
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJECT 7: Student Management System -->
+            <article class="card project-card reveal reveal-delay-1 filter-show" data-category="systems" aria-labelledby="p2Title">
+              <div class="project-thumbnail-wrapper">
+                <img
+                  src="images/sms.png"
+                  alt="Student Management System screenshot"
+                  class="project-thumbnail clickable-img"
+                  data-lightbox="true"
+                  data-caption="Project 2: Student Management System (Academic Records & Admin Portal)"
+                  title="Click to inspect preview image"
+                  onerror="if(!this.dataset.tried){this.dataset.tried='1';this.src='images/project2-placeholder.png';}"
+                />
+                <span class="project-badge-overlay">Desktop / Enterprise</span>
+              </div>
+
+              <div class="project-content">
+                <div class="project-meta">
+                  <span>Database Systems</span>
+                  <span aria-hidden="true">&bull;</span>
+                  <span>Record Management</span>
+                  <span aria-hidden="true">&bull;</span>
+                  <span class="badge" style="background: rgba(14, 165, 233, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); padding: 0.15rem 0.5rem; border-radius: var(--radius-sm); font-size: 0.725rem;">Academic Project</span>
+                </div>
+
+                <h3 id="p2Title" class="project-title">
+                  Student Management System
+                </h3>
+
+                <p class="project-description">
+                  A software system engineered to streamline the administration of student information,
+                  course enrolments, grade calculations, and departmental academic records.
+                </p>
+
+                <div class="project-problem">
+                  <strong>Problem Being Solved:</strong>
+                  <p style="margin: 0; font-size: 0.85rem; color: var(--color-text-secondary);">
+                    Manual academic record keeping is prone to clerical errors, record loss, and slow
+                    transcript compilation. This system centralizes student data, enforces referential
+                    integrity, and automates grade aggregation.
+                  </p>
+                </div>
+
+                <div class="project-tech-stack">
+                  <strong>Technologies Used:</strong>
+                  <div class="project-tech-list">
+                    <span>Java</span>
+                    <span aria-hidden="true">&bull;</span>
+                    <span>MySQL Database</span>
+                    <span aria-hidden="true">&bull;</span>
+                    <span>JavaFX GUI</span>
+                    <span aria-hidden="true">&bull;</span>
+                    <span>JDBC Architecture</span>
+                  </div>
+                </div>
+
+                <div class="project-footer">
+                  <span style="font-size: 0.8rem; color: var(--color-text-muted);">
+                    Status: Coursework Solution
+                  </span>
+                  <a
+                    href="https://github.com/TONNY-TED"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline btn-sm"
+                    title="View project on GitHub"
+                  >
+                    GitHub Repo &rarr;
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJECT 8: Personal Portfolio Website -->
+            <article class="card project-card reveal reveal-delay-2 filter-show" data-category="web" aria-labelledby="p3Title">
+              <div class="project-thumbnail-wrapper">
+                <img
+                  src="images/portfolio.png"
+                  alt="Personal portfolio website preview screenshot"
+                  class="project-thumbnail clickable-img"
+                  data-lightbox="true"
+                  data-caption="Project 3: Personal Portfolio Website (HTML5, CSS3, Vanilla JS)"
+                  title="Click to inspect preview image"
+                  onerror="if(!this.dataset.tried){this.dataset.tried='1';this.src='images/project3-placeholder.png';}"
+                />
+                <span class="project-badge-overlay">Web Platform</span>
+              </div>
+
+              <div class="project-content">
+                <div class="project-meta">
+                  <span>Front-End Engineering</span>
+                  <span aria-hidden="true">&bull;</span>
+                  <span>Responsive Web</span>
+                  <span aria-hidden="true">&bull;</span>
+                  <span class="badge" style="background: rgba(34, 197, 94, 0.15); color: #4ade80; border: 1px solid rgba(74, 222, 128, 0.3); padding: 0.15rem 0.5rem; border-radius: var(--radius-sm); font-size: 0.725rem;">Completed</span>
+                </div>
+
+                <h3 id="p3Title" class="project-title">
+                  Personal Portfolio Website
+                </h3>
+
+                <p class="project-description">
+                  A modern, responsive, and performance-optimized personal website showcasing
+                  academic achievements, technical competencies, and software engineering projects.
+                </p>
+
+                <div class="project-problem">
+                  <strong>Problem Being Solved:</strong>
+                  <p style="margin: 0; font-size: 0.85rem; color: var(--color-text-secondary);">
+                    Demonstrating clean web development fundamentals using semantic HTML5, modern CSS3, and JavaScript for fast load times and universal cross-device support.
+                  </p>
+                </div>
+
+                <div class="project-tech-stack">
+                  <strong>Technologies Used:</strong>
+                  <div class="project-tech-list">
+                    <span>HTML5</span>
+                    <span aria-hidden="true">&bull;</span>
+                    <span>CSS3 (Flexbox & Grid)</span>
+                    <span aria-hidden="true">&bull;</span>
+                    <span>Vanilla JavaScript</span>
+                    <span aria-hidden="true">&bull;</span>
+                    <span>GitHub Pages</span>
+                  </div>
+                </div>
+
+                <div class="project-footer">
+                  <span style="font-size: 0.8rem; color: var(--color-text-muted);">
+                    Status: Fully Deployed
+                  </span>
+                  <a
+                    href="https://github.com/TONNY-TED"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary btn-sm"
+                    title="View project on GitHub"
+                  >
+                    GitHub Repo &rarr;
+                  </a>
+                </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- -----------------------------------------------------------------
+           SECTION: PROJECT COMPARISON & ARCHITECTURAL SUMMARY TABLE
+           ----------------------------------------------------------------- -->
+      <section class="section section-alt" aria-labelledby="matrixHeading">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-kicker">Comparative Analysis</span>
+            <h2 id="matrixHeading" class="section-title">Project Technical Matrix</h2>
+            <p class="section-description">
+              A side-by-side technical summary comparing target platforms, problem scopes, and development stacks across all 8 projects.
+            </p>
+          </div>
+
+          <div class="table-responsive reveal">
+            <table class="table-custom" summary="Technical comparison matrix of Tonny Chibambo's projects">
+              <thead>
+                <tr>
+                  <th scope="col">Project Title</th>
+                  <th scope="col">Application Domain</th>
+                  <th scope="col">Core Technologies</th>
+                  <th scope="col">Target Platform</th>
+                  <th scope="col">Repository Reference</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>VoiceHealth</strong></td>
+                  <td>Healthcare Assistance & Medical Triage</td>
+                  <td>Flutter, Dart, REST APIs</td>
+                  <td>Mobile (Android & iOS)</td>
+                  <td><a href="https://github.com/TONNY-TED" target="_blank" rel="noopener noreferrer" style="color: var(--color-accent); font-family: var(--font-mono); font-size: 0.85rem;">github.com/TONNY-TED</a></td>
+                </tr>
+                <tr>
+                  <td><strong>CareQueue</strong></td>
+                  <td>Hospital Queue & Patient Flow Management</td>
+                  <td>Web App, JavaScript, Triage Logic</td>
+                  <td>Web (Clinics & Mobile)</td>
+                  <td><a href="https://github.com/TONNY-TED" target="_blank" rel="noopener noreferrer" style="color: var(--color-accent); font-family: var(--font-mono); font-size: 0.85rem;">github.com/TONNY-TED</a></td>
+                </tr>
+                <tr>
+                  <td><strong>Funsa Suppliers Website</strong></td>
+                  <td>Corporate & E-Commerce Supply Chain</td>
+                  <td>HTML5, CSS3, Catalog DB</td>
+                  <td>Web (Commercial Portal)</td>
+                  <td><a href="https://github.com/TONNY-TED" target="_blank" rel="noopener noreferrer" style="color: var(--color-accent); font-family: var(--font-mono); font-size: 0.85rem;">github.com/TONNY-TED</a></td>
+                </tr>
+                <tr>
+                  <td><strong>Smart Health Watch</strong></td>
+                  <td>IoT Health Monitoring & Vital Telemetry</td>
+                  <td>Microcontrollers, PPG/SpO2, MQTT</td>
+                  <td>Wearable IoT Hardware</td>
+                  <td><a href="https://github.com/TONNY-TED" target="_blank" rel="noopener noreferrer" style="color: var(--color-accent); font-family: var(--font-mono); font-size: 0.85rem;">github.com/TONNY-TED</a></td>
+                </tr>
+                <tr>
+                  <td><strong>Surveillance & Exploration Robot</strong></td>
+                  <td>Remote Camera Inspection & Obstacle Avoidance</td>
+                  <td>Robotics, Ultrasonic, Video Stream</td>
+                  <td>Physical IoT Rover</td>
+                  <td><a href="https://github.com/TONNY-TED" target="_blank" rel="noopener noreferrer" style="color: var(--color-accent); font-family: var(--font-mono); font-size: 0.85rem;">github.com/TONNY-TED</a></td>
+                </tr>
+                <tr>
+                  <td><strong>Business Branding Package</strong></td>
+                  <td>Brand Identity & Marketing Collateral</td>
+                  <td>Logo Design, Typography, Vector Arts</td>
+                  <td>Digital & Print Branding</td>
+                  <td><a href="https://github.com/TONNY-TED" target="_blank" rel="noopener noreferrer" style="color: var(--color-accent); font-family: var(--font-mono); font-size: 0.85rem;">github.com/TONNY-TED</a></td>
+                </tr>
+                <tr>
+                  <td><strong>Student Management System</strong></td>
+                  <td>Academic Administration & Records</td>
+                  <td>Java, MySQL, JavaFX, OOP</td>
+                  <td>Desktop Application</td>
+                  <td><a href="https://github.com/TONNY-TED" target="_blank" rel="noopener noreferrer" style="color: var(--color-accent); font-family: var(--font-mono); font-size: 0.85rem;">github.com/TONNY-TED</a></td>
+                </tr>
+                <tr>
+                  <td><strong>Personal Portfolio</strong></td>
+                  <td>Professional Developer Identity & Showcase</td>
+                  <td>HTML5, CSS3, JavaScript</td>
+                  <td>Web (Responsive All Devices)</td>
+                  <td><a href="https://github.com/TONNY-TED" target="_blank" rel="noopener noreferrer" style="color: var(--color-accent); font-family: var(--font-mono); font-size: 0.85rem;">github.com/TONNY-TED</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- -----------------------------------------------------------------
+           SECTION: FUTURE PROJECT ROADMAP
+           ----------------------------------------------------------------- -->
+      <section class="section" aria-labelledby="roadmapHeading">
+        <div class="container">
+          <div class="grid-2">
+            <div class="reveal">
+              <span class="section-kicker">Future Pipeline</span>
+              <h2 id="roadmapHeading" class="section-title">Upcoming Academic Projects</h2>
+              <p>
+                As my Computer Science curriculum progresses, I am planning advanced projects
+                focusing on distributed architectures and machine intelligence:
+              </p>
+              <ul style="margin-bottom: 1.5rem;">
+                <li>
+                  <strong>Distributed Microservices Telemetry Engine:</strong>
+                  Exploring containerization, API gateways, and asynchronous event bus architectures.
+                </li>
+                <li>
+                  <strong>AI-Assisted Code Documentation Analyzer:</strong>
+                  Applying natural language models to automatically evaluate comment quality and generate API specifications.
+                </li>
+                <li>
+                  <strong>Network Intrusion & Anomaly Detector:</strong>
+                  Simulating packet inspection algorithms to classify anomalous network traffic patterns.
+                </li>
+              </ul>
+              <a href="animations.html" class="btn btn-secondary">
+                Explore Animation Lab &rarr;
+              </a>
+            </div>
+
+            <div class="reveal reveal-delay-2">
+              <div class="card" style="height: 100%; display: flex; flex-direction: column; justify-content: center;">
+                <h3 class="card-title" style="font-size: 1.25rem;">Repository Replacement Instructions</h3>
+                <p style="font-size: 0.9rem; margin-bottom: 1rem;">
+                  When ready to link your actual GitHub repositories:
+                </p>
+                <ol style="font-size: 0.875rem; margin-bottom: 1.5rem;">
+                  <li>Project repository buttons link to your central profile (<code>https://github.com/TONNY-TED</code>).</li>
+                  <li>You can link specific dedicated repository sub-URLs whenever they are published.</li>
+                  <li>Save project screenshots as <code>voice.png</code>, <code>care.png</code>, <code>funsa.png</code>, <code>watch.png</code>, <code>robot.png</code>, <code>branding.png</code>, <code>sms.png</code>, or <code>portfolio.png</code> into the <code>images/</code> directory.</li>
+                </ol>
+                <a href="about.html#contact" class="btn btn-outline btn-sm" style="align-self: flex-start;">
+                  Have Questions? Contact Tonny &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =====================================================================
+         LIGHTBOX MODAL
+         ===================================================================== -->
+    <div
+      id="lightboxModal"
+      class="lightbox-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+      aria-label="Image Preview Modal"
+    >
+      <div class="lightbox-content">
+        <img id="lightboxImg" class="lightbox-img" src="" alt="Enlarged view" />
+        <div class="lightbox-caption">
+          <div class="lightbox-caption-text">
+            <strong id="lightboxCaption">Image Preview</strong>
+            <span>Placeholder container - easily replaceable with your photograph</span>
+          </div>
+          <button id="lightboxClose" class="lightbox-close-btn" type="button" aria-label="Close modal">
+            &times;
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- =====================================================================
+         SITE FOOTER
+         ===================================================================== -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <h4>TONNY CHIBAMBO</h4>
+            <p>
+              Computer Science Student & Software Developer. Dedicated to building innovative,
+              resilient software solutions and exploring modern technology frontiers.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h5>Navigation</h5>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Me</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="animations.html">Animated Concepts</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h5>Connect</h5>
+            <ul class="footer-links">
+              <li>
+                <a href="mailto:tonnychibambo@gmail.com" title="Send email to Tonny Chibambo">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                  <span>tonnychibambo@gmail.com</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/TONNY-TED" target="_blank" rel="noopener noreferrer" title="Tonny Chibambo GitHub Profile">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                  <span>GitHub</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/tonny-chibambo-2b9249334/" target="_blank" rel="noopener noreferrer" title="Tonny Chibambo LinkedIn Profile">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                  <span>LinkedIn</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2026 <strong>TONNY CHIBAMBO</strong>. Academic Portfolio. Built with HTML5, CSS3 & JavaScript.
+          </p>
+          <p>
+            <span>Blantyre, Malawi</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

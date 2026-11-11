@@ -1,0 +1,808 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me - Tonny Chibambo | Computer Science Student</title>
+    <meta
+      name="description"
+      content="Learn more about Tonny Chibambo: educational background, technical skills, professional interests, career goals and contact details."
+    />
+    <meta property="og:title" content="About Me - Tonny Chibambo" />
+    <meta
+      property="og:description"
+      content="Educational background, technical skills, and career aspirations of Tonny Chibambo."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Script -->
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- =====================================================================
+         SITE HEADER: TOP BAR CONTRACT
+         ===================================================================== -->
+    <header class="site-header" role="banner">
+      <div class="container nav-container">
+        <!-- Zone 1: Brand Wordmark -->
+        <a href="index.html" class="brand-link" aria-label="Tonny Chibambo Homepage">
+          <span class="brand-badge" aria-hidden="true">TC</span>
+          <span>TONNY CHIBAMBO</span>
+        </a>
+
+        <!-- Zone 2: Navigation Links -->
+        <nav id="navMenu" class="nav-menu" role="navigation" aria-label="Main Navigation">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link active">About Me</a>
+          <a href="projects.html" class="nav-link">Projects</a>
+          <a href="animations.html" class="nav-link">Animated Concepts</a>
+        </nav>
+
+        <!-- Zone 3: Primary Action & Mobile Hamburger -->
+        <div class="nav-actions">
+          <a href="#contact" class="btn btn-primary btn-sm">Contact Me</a>
+          <button
+            id="navToggle"
+            class="nav-toggle"
+            type="button"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="navMenu"
+          >
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- =====================================================================
+         MAIN CONTENT: ABOUT ME
+         ===================================================================== -->
+    <main id="mainContent">
+      <!-- -----------------------------------------------------------------
+           SECTION 1: PERSONAL INTRODUCTION & BIOGRAPHY
+           ----------------------------------------------------------------- -->
+      <section id="bio" class="section" aria-labelledby="aboutIntroHeading">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-kicker">Professional Biography</span>
+            <h1 id="aboutIntroHeading" class="section-title">About Tonny Chibambo</h1>
+            <p class="section-description">
+              A comprehensive overview of my academic foundation, technical competencies,
+              and future trajectory in software engineering.
+            </p>
+          </div>
+
+          <!-- Section Switcher Navigation Tabs with Smooth Transitions -->
+          <div class="tab-container text-center reveal" style="text-align: center; margin-bottom: 2.75rem;">
+            <div class="tab-nav" role="tablist" aria-label="About Page Section Switcher">
+              <a href="#bio" class="tab-btn active">
+                <span>Biography</span>
+              </a>
+              <a href="#education" class="tab-btn">
+                <span>Education Table</span>
+              </a>
+              <a href="#skills" class="tab-btn">
+                <span>Technical Skills</span>
+              </a>
+              <a href="#aspirations" class="tab-btn">
+                <span>Aspirations & Goals</span>
+              </a>
+              <a href="#contact" class="tab-btn">
+                <span>Contact Details</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <!-- Biography Content -->
+            <div class="reveal reveal-left">
+              <h2 style="font-size: 1.6rem; margin-bottom: 1rem;">Personal Introduction</h2>
+              <p>
+                My name is <strong>TONNY CHIBAMBO</strong>. I am an enthusiastic and motivated
+                <strong>Computer Science student</strong> with a keen interest in modern software
+                development, digital technology solutions, and continuous technical innovation.
+              </p>
+              <p>
+                My educational journey is anchored in understanding fundamental computer science
+                concepts—such as algorithms, data structures, computational logic, and database
+                architectures—while simultaneously gaining practical experience writing clean,
+                maintainable code.
+              </p>
+              <p>
+                I thrive at the intersection of <em>creative problem-solving</em> and <em>analytical
+                thinking</em>. Whether developing mobile health applications, building desktop management
+                systems, or crafting accessible web interfaces, I strive to write software that is not
+                only technically sound, but also delivers tangible positive impacts to users and
+                organizations.
+              </p>
+
+              <hr style="border: none; border-top: 1px solid var(--color-border); margin: 1.5rem 0;" />
+
+              <div class="metadata-strip" style="border-bottom: none; padding-bottom: 0;">
+                <span class="meta-label">Primary Identity:</span>
+                <span class="meta-value">Computer Science Student & Developer</span>
+                <span class="metadata-separator" aria-hidden="true">/</span>
+                <span class="meta-label">Location:</span>
+                <span class="meta-value">Blantyre, Malawi</span>
+              </div>
+            </div>
+
+            <!-- Profile Showcase Card -->
+            <div class="reveal reveal-delay-2">
+              <div class="card">
+                <div style="display: flex; gap: 1.25rem; align-items: center; margin-bottom: 1.25rem;">
+                  <div style="width: 84px; height: 84px; border-radius: var(--radius-md); overflow: hidden; flex-shrink: 0; border: 2px solid var(--color-border-accent);">
+                    <img
+                      src="images/tonny.png"
+                      alt="Tonny Chibambo"
+                      class="clickable-img"
+                      data-lightbox="true"
+                      data-caption="Tonny Chibambo Profile Photograph"
+                      style="width: 100%; height: 100%; object-fit: cover;"
+                      onerror="if(!this.dataset.tried){this.dataset.tried='1';this.src='images/tonny.png';}"
+                    />
+                  </div>
+                  <div>
+                    <h3 style="font-size: 1.25rem; margin-bottom: 0.25rem;">Tonny Chibambo</h3>
+                    <p style="font-size: 0.9rem; color: var(--color-text-accent); margin: 0; font-weight: 600;">
+                      Computer Science Student
+                    </p>
+                    <span style="font-size: 0.85rem; color: var(--color-text-secondary);">
+                      DMI-St. John the Baptist University
+                    </span>
+                  </div>
+                </div>
+
+                <p style="font-size: 0.925rem; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
+                  Passionate about software engineering, computer networks, data analysis, and building reliable digital tools. Currently pursuing a BSc in Computer Science.
+                </p>
+
+                <a href="#skills" class="btn btn-secondary btn-sm" style="width: 100%; text-align: center;">
+                  View Skills & Certifications &darr;
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- -----------------------------------------------------------------
+           SECTION 2: EDUCATIONAL BACKGROUND (HTML TABLE REQUIREMENT)
+           ----------------------------------------------------------------- -->
+      <section id="education" class="section section-alt" aria-labelledby="educationHeading">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-kicker">Academic History</span>
+            <h2 id="educationHeading" class="section-title">Educational Background</h2>
+            <p class="section-description">
+              The formal academic qualifications, university degree pursuits, and specialized online coursework shaping my computing foundation.
+            </p>
+          </div>
+
+          <!-- Semantic HTML5 Table with responsive wrapper -->
+          <div class="table-responsive reveal">
+            <table class="table-custom" summary="Educational background and degree pursuits of Tonny Chibambo">
+              <thead>
+                <tr>
+                  <th scope="col">Institution</th>
+                  <th scope="col">Qualification</th>
+                  <th scope="col">Programme</th>
+                  <th scope="col">Period of Study</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <strong>DMI-St. John the Baptist University</strong>
+                    <span style="font-size: 0.825rem; color: var(--color-text-muted);">
+                      Faculty of Science & Technology
+                    </span>
+                  </td>
+                  <td>
+                    Bachelor of Science (BSc)
+                    <span class="badge" style="background: rgba(14, 165, 233, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); padding: 0.15rem 0.5rem; border-radius: var(--radius-sm); font-size: 0.725rem;">Current</span>
+                  </td>
+                  <td>
+                    <strong>Computer Science</strong>
+                    <span style="font-size: 0.825rem; color: var(--color-text-muted);">
+                      Software Engineering, AI & Systems Specialisation
+                    </span>
+                  </td>
+                  <td class="tabular-nums">
+                    <strong>2024 – 2027</strong>
+                    <span style="font-size: 0.825rem; color: var(--color-text-accent);">Current Scholar</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>WorldQuant University</strong>
+                    <span style="font-size: 0.825rem; color: var(--color-text-muted);">
+                      International Online Education
+                    </span>
+                  </td>
+                  <td>
+                    Data Science
+                    <span class="badge" style="background: rgba(14, 165, 233, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); padding: 0.15rem 0.5rem; border-radius: var(--radius-sm); font-size: 0.725rem;">Online Course</span>
+                  </td>
+                  <td>
+                    <strong>Data Science & Applied Analytics</strong>
+                    <span style="font-size: 0.825rem; color: var(--color-text-muted);">
+                      Data Analysis, Statistical Modeling & Scientific Computing
+                    </span>
+                  </td>
+                  <td class="tabular-nums">
+                    <strong>Continuing</strong>
+                    <span style="font-size: 0.825rem; color: var(--color-text-accent);">Active Scholar</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Alpha Private School</strong>
+                    <span style="font-size: 0.825rem; color: var(--color-text-muted);">
+                      Secondary Education
+                    </span>
+                  </td>
+                  <td>
+                    Malawi School Certificate of Education (MSCE)
+                    <span class="badge" style="background: rgba(34, 197, 94, 0.15); color: #4ade80; border: 1px solid rgba(74, 222, 128, 0.3); padding: 0.15rem 0.5rem; border-radius: var(--radius-sm); font-size: 0.725rem;">Completed</span>
+                  </td>
+                  <td>
+                    Sciences & Mathematics Stream
+                    <span style="font-size: 0.825rem; color: var(--color-text-muted);">
+                      Physics, Mathematics, Computer Studies
+                    </span>
+                  </td>
+                  <td class="tabular-nums">
+                    <strong>2020 – 2023</strong>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Professional Certifications Showcase -->
+          <div style="margin-top: 3.5rem;">
+            <div class="section-header text-center reveal">
+              <span class="section-kicker">Verified Credentials</span>
+              <h3 style="font-size: 1.6rem; margin-top: 0.5rem; margin-bottom: 0.5rem;">Professional Certifications</h3>
+              <p style="font-size: 0.925rem; color: var(--color-text-secondary); max-width: 680px; margin: 0 auto;">
+                Industry-recognized credentials in High-Performance GPU Computing, Artificial Intelligence & Data Science, Cybersecurity, and Computer Networking.
+              </p>
+            </div>
+
+            <div class="grid-2 reveal">
+              <!-- Cert 1: NVIDIA CUDA C/C++ -->
+              <div class="card cert-card">
+                <div class="cert-header">
+                  <div class="cert-icon-wrapper" style="background: rgba(128, 0, 32, 0.08); border: 1px solid rgba(128, 0, 32, 0.22); color: #800020;">
+                    <strong>NV</strong>
+                  </div>
+                  <div>
+                    <span class="cert-issuer">NVIDIA Deep Learning Institute</span>
+                    <h4 class="cert-title">Fundamentals of Accelerated Computing with CUDA C/C++</h4>
+                  </div>
+                </div>
+                <div class="cert-meta-strip">
+                  <span class="cert-badge" style="background: rgba(128, 0, 32, 0.08); color: #800020; border: 1px solid rgba(128, 0, 32, 0.22);">Verified Credential</span>
+                  <span class="cert-date">Issued: October 5, 2024</span>
+                </div>
+                <p class="cert-summary">
+                  Mastered GPU programming and CUDA tools for accelerating C/C++ applications, enhancing capabilities in high-performance computing and data-intensive computing.
+                </p>
+                <div class="project-tech-list" style="margin-top: 0.75rem;">
+                  <span>CUDA C/C++</span>
+                  <span aria-hidden="true">&bull;</span>
+                  <span>GPU Acceleration</span>
+                  <span aria-hidden="true">&bull;</span>
+                  <span>Parallel Computing</span>
+                </div>
+              </div>
+
+              <!-- Cert 2: Cisco Data Science -->
+              <div class="card cert-card">
+                <div class="cert-header">
+                  <div class="cert-icon-wrapper" style="background: rgba(128, 0, 32, 0.08); border: 1px solid rgba(128, 0, 32, 0.22); color: #800020;">
+                    <strong>CISCO</strong>
+                  </div>
+                  <div>
+                    <span class="cert-issuer">Cisco Networking Academy</span>
+                    <h4 class="cert-title">Introduction to Data Science</h4>
+                  </div>
+                </div>
+                <div class="cert-meta-strip">
+                  <span class="cert-badge" style="background: rgba(128, 0, 32, 0.08); color: #800020; border: 1px solid rgba(128, 0, 32, 0.22);">Verified Credential</span>
+                  <span class="cert-date">Issued: February 15, 2025</span>
+                </div>
+                <p class="cert-summary">
+                  Completed foundational training in data science and explored the role of Artificial Intelligence (AI) and Machine Learning (ML) in developing intelligent systems and predictive models.
+                </p>
+                <div class="project-tech-list" style="margin-top: 0.75rem;">
+                  <span>Data Science</span>
+                  <span aria-hidden="true">&bull;</span>
+                  <span>AI & Machine Learning</span>
+                  <span aria-hidden="true">&bull;</span>
+                  <span>Predictive Models</span>
+                </div>
+              </div>
+
+              <!-- Cert 3: Cisco Cybersecurity -->
+              <div class="card cert-card">
+                <div class="cert-header">
+                  <div class="cert-icon-wrapper" style="background: rgba(165, 42, 42, 0.08); border: 1px solid rgba(165, 42, 42, 0.22); color: #a52a2a;">
+                    <strong>CISCO</strong>
+                  </div>
+                  <div>
+                    <span class="cert-issuer">Cisco Networking Academy</span>
+                    <h4 class="cert-title">Introduction to Cybersecurity</h4>
+                  </div>
+                </div>
+                <div class="cert-meta-strip">
+                  <span class="cert-badge" style="background: rgba(165, 42, 42, 0.08); color: #a52a2a; border: 1px solid rgba(165, 42, 42, 0.22);">Verified Credential</span>
+                  <span class="cert-date">Issued: January 16, 2025</span>
+                </div>
+                <p class="cert-summary">
+                  Gained foundational knowledge of cybersecurity principles, including cyber threats, vulnerabilities, attacks, risk management, and essential security practices.
+                </p>
+                <div class="project-tech-list" style="margin-top: 0.75rem;">
+                  <span>Cybersecurity</span>
+                  <span aria-hidden="true">&bull;</span>
+                  <span>Threat Defense</span>
+                  <span aria-hidden="true">&bull;</span>
+                  <span>Risk Management</span>
+                </div>
+              </div>
+
+              <!-- Cert 4: Cisco Networking Basics -->
+              <div class="card cert-card">
+                <div class="cert-header">
+                  <div class="cert-icon-wrapper" style="background: rgba(128, 0, 32, 0.08); border: 1px solid rgba(128, 0, 32, 0.22); color: #800020;">
+                    <strong>CISCO</strong>
+                  </div>
+                  <div>
+                    <span class="cert-issuer">Cisco Networking Academy</span>
+                    <h4 class="cert-title">Networking Basics</h4>
+                  </div>
+                </div>
+                <div class="cert-meta-strip">
+                  <span class="cert-badge" style="background: rgba(128, 0, 32, 0.08); color: #800020; border: 1px solid rgba(128, 0, 32, 0.22);">Verified Credential</span>
+                  <span class="cert-date">Issued: July 8, 2026</span>
+                </div>
+                <p class="cert-summary">
+                  Acquired foundational networking skills, including network types, IP addressing, Ethernet, network devices, protocols, wireless networking, and basic network troubleshooting.
+                </p>
+                <div class="project-tech-list" style="margin-top: 0.75rem;">
+                  <span>IP Addressing</span>
+                  <span aria-hidden="true">&bull;</span>
+                  <span>Ethernet & Protocols</span>
+                  <span aria-hidden="true">&bull;</span>
+                  <span>Troubleshooting</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- -----------------------------------------------------------------
+           SECTION 3: TECHNICAL SKILLS (CARDS & PROGRESS INDICATORS)
+           ----------------------------------------------------------------- -->
+      <section id="skills" class="section" aria-labelledby="skillsHeading">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-kicker">Core Capabilities</span>
+            <h2 id="skillsHeading" class="section-title">Technical Skills & Competencies</h2>
+            <p class="section-description">
+              Technical proficiencies acquired through university coursework, programming assignments,
+              and independent practical projects.
+            </p>
+          </div>
+
+          <div class="skills-grid reveal">
+            <!-- Skill 1: HTML -->
+            <div class="skill-card">
+              <div class="skill-info">
+                <span class="skill-name">HTML / HTML5</span>
+                <span class="skill-percentage">90%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-percentage="90%" style="width: 0%;"></div>
+              </div>
+              <p style="font-size: 0.825rem; color: var(--color-text-muted); margin-top: 0.5rem;">
+                Semantic markup, accessible structure, SEO fundamentals, forms, and tables.
+              </p>
+            </div>
+
+            <!-- Skill 2: CSS -->
+            <div class="skill-card">
+              <div class="skill-info">
+                <span class="skill-name">CSS / CSS3</span>
+                <span class="skill-percentage">85%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-percentage="85%" style="width: 0%;"></div>
+              </div>
+              <p style="font-size: 0.825rem; color: var(--color-text-muted); margin-top: 0.5rem;">
+                Flexbox, CSS Grid, custom properties (variables), transitions, keyframe animations, responsive design.
+              </p>
+            </div>
+
+            <!-- Skill 3: JavaScript -->
+            <div class="skill-card">
+              <div class="skill-info">
+                <span class="skill-name">JavaScript (ES6+)</span>
+                <span class="skill-percentage">80%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-percentage="80%" style="width: 0%;"></div>
+              </div>
+              <p style="font-size: 0.825rem; color: var(--color-text-muted); margin-top: 0.5rem;">
+                Vanilla DOM manipulation, asynchronous programming, event handling, IntersectionObserver.
+              </p>
+            </div>
+
+            <!-- Skill 4: Java Programming -->
+            <div class="skill-card">
+              <div class="skill-info">
+                <span class="skill-name">Java Programming</span>
+                <span class="skill-percentage">75%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-percentage="75%" style="width: 0%;"></div>
+              </div>
+              <p style="font-size: 0.825rem; color: var(--color-text-muted); margin-top: 0.5rem;">
+                Object-Oriented Programming (OOP), inheritance, polymorphism, Java Collections, and GUI development.
+              </p>
+            </div>
+
+            <!-- Skill 5: Python Programming -->
+            <div class="skill-card">
+              <div class="skill-info">
+                <span class="skill-name">Python Programming</span>
+                <span class="skill-percentage">80%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-percentage="80%" style="width: 0%;"></div>
+              </div>
+              <p style="font-size: 0.825rem; color: var(--color-text-muted); margin-top: 0.5rem;">
+                Data analysis scripting, algorithm design, automation, and foundational machine learning concepts.
+              </p>
+            </div>
+
+            <!-- Skill 6: Database Management -->
+            <div class="skill-card">
+              <div class="skill-info">
+                <span class="skill-name">Database Management (SQL)</span>
+                <span class="skill-percentage">75%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-percentage="75%" style="width: 0%;"></div>
+              </div>
+              <p style="font-size: 0.825rem; color: var(--color-text-muted); margin-top: 0.5rem;">
+                Relational schema design, MySQL, entity-relationship modeling, queries, normalization, and integrity constraints.
+              </p>
+            </div>
+
+            <!-- Skill 7: Software Development -->
+            <div class="skill-card">
+              <div class="skill-info">
+                <span class="skill-name">Software Development Lifecycle</span>
+                <span class="skill-percentage">78%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-percentage="78%" style="width: 0%;"></div>
+              </div>
+              <p style="font-size: 0.825rem; color: var(--color-text-muted); margin-top: 0.5rem;">
+                Software engineering principles, version control with Git, modular architecture, code documentation.
+              </p>
+            </div>
+
+            <!-- Skill 8: Computer Networking -->
+            <div class="skill-card">
+              <div class="skill-info">
+                <span class="skill-name">Computer Networking</span>
+                <span class="skill-percentage">70%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-percentage="70%" style="width: 0%;"></div>
+              </div>
+              <p style="font-size: 0.825rem; color: var(--color-text-muted); margin-top: 0.5rem;">
+                OSI & TCP/IP models, routing protocols, socket programming concepts, IP addressing, DNS, and HTTP/HTTPS.
+              </p>
+            </div>
+
+            <!-- Skill 9: Cybersecurity -->
+            <div class="skill-card">
+              <div class="skill-info">
+                <span class="skill-name">Cybersecurity</span>
+                <span class="skill-percentage">68%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-percentage="68%" style="width: 0%;"></div>
+              </div>
+              <p style="font-size: 0.825rem; color: var(--color-text-muted); margin-top: 0.5rem;">
+                Fundamental information security principles (CIA triad), authentication protocols, vulnerability assessment.
+              </p>
+            </div>
+
+            <!-- Notice card on editable proficiencies -->
+            <div class="skill-card" style="display: flex; flex-direction: column; justify-content: center; background: rgba(56, 189, 248, 0.04); border-style: dashed;">
+              <h4 style="font-size: 0.95rem; margin-bottom: 0.5rem; color: var(--color-text-accent);">
+                Academic Self-Assessment Note
+              </h4>
+              <p style="font-size: 0.825rem; color: var(--color-text-secondary); margin: 0;">
+                All skill indicators reflect self-assessed learning proficiencies and relative practical exposure
+                through coursework and personal projects. Values are completely customizable to reflect
+                ongoing academic progress.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- -----------------------------------------------------------------
+           SECTION 4: INTERESTS, HOBBIES & CAREER ASPIRATIONS
+           ----------------------------------------------------------------- -->
+      <section id="aspirations" class="section section-alt" aria-labelledby="aspirationsHeading">
+        <div class="container">
+          <div class="grid-2">
+            <!-- Left Column: Interests and Hobbies (Lists) -->
+            <div class="reveal">
+              <span class="section-kicker">Beyond The Curriculum</span>
+              <h2 style="font-size: 1.75rem; margin-bottom: 1rem;">Interests & Personal Pursuits</h2>
+
+              <h4 style="margin-bottom: 0.5rem; color: var(--color-text-accent);">Professional Interests:</h4>
+              <ul style="margin-bottom: 1.5rem;">
+                <li><strong>Software Engineering:</strong> Clean architecture, design patterns, scalable backend systems.</li>
+                <li><strong>Web Development:</strong> Standards-based front-end development, responsive layouts, web accessibility.</li>
+                <li><strong>Artificial Intelligence:</strong> Neural networks, natural language processing, intelligent agent workflows.</li>
+                <li><strong>Cybersecurity:</strong> Network forensics, defense protocols, secure software engineering.</li>
+                <li><strong>Information Technology & Solutions:</strong> Digital innovation and business automation frameworks.</li>
+              </ul>
+
+              <h4 style="margin-bottom: 0.75rem; color: var(--color-text-accent);">Personal Hobbies & Activities:</h4>
+              <p style="font-size: 0.9rem; color: var(--color-text-secondary); margin-bottom: 0.75rem;">
+                Balanced personal pursuits sharpen problem-solving agility, logical reasoning, and creative engineering thinking:
+              </p>
+              <ul style="padding-left: 1.25rem;">
+                <li style="margin-bottom: 0.75rem;">
+                  <strong>Software Development & Code Exploration</strong> – Exploring new programming technologies, experimenting with code and building practical solutions.
+                </li>
+                <li style="margin-bottom: 0.75rem;">
+                  <strong>Games & Strategic Thinking</strong> – Playing chess to develop problem-solving, logical reasoning and strategic thinking.
+                </li>
+                <li style="margin-bottom: 0.75rem;">
+                  <strong>Technology Research & Continuous Learning</strong> – Reading technology articles, exploring emerging innovations and learning new technical skills.
+                </li>
+                <li style="margin-bottom: 0.75rem;">
+                  <strong>Football & Physical Fitness</strong> – Participating in sports and physical activities to maintain a healthy and balanced lifestyle.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Right Column: Career Aspirations -->
+            <div class="reveal reveal-delay-2">
+              <span class="section-kicker">Vision & Objectives</span>
+              <h2 id="aspirationsHeading" style="font-size: 1.75rem; margin-bottom: 1rem;">
+                Career Aspirations
+              </h2>
+
+              <div class="card" style="margin-bottom: 1.5rem;">
+                <h3 class="card-title" style="font-size: 1.15rem; color: var(--color-accent-light);">
+                  Professional Mission Statement
+                </h3>
+                <p>
+                  "My aspiration is to evolve into a highly proficient <strong>Software Engineer</strong>
+                  capable of architecting and deploying impactful digital solutions. I am driven to utilize
+                  advanced computational technologies, resilient systems engineering, and ethical software
+                  practices to address complex, real-world problems facing contemporary society and industry."
+                </p>
+                <div style="margin-top: 1rem; font-size: 0.85rem; color: var(--color-text-secondary); border-left: 2px solid var(--color-accent); padding-left: 0.75rem;">
+                  <strong>Long-term Vision:</strong> To architect reliable, scalable software systems, intuitive web platforms, and intelligent digital solutions that empower institutions and businesses across Africa and globally.
+                </div>
+              </div>
+
+              <div class="card">
+                <h4 style="font-size: 1rem; margin-bottom: 0.5rem;">Key Professional Milestones:</h4>
+                <ul style="margin: 0;">
+                  <li>Graduate with honors in Computer Science from <strong>DMI St. John the Baptist University</strong>.</li>
+                  <li>Contribute to production-grade open-source software libraries and mobile applications.</li>
+                  <li>Obtain industry-recognized certifications in cloud infrastructure and software architecture.</li>
+                  <li>Lead high-performing engineering teams delivering digital transformation solutions.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- -----------------------------------------------------------------
+           SECTION 5: CONTACT INFORMATION & HYPERLINKS
+           ----------------------------------------------------------------- -->
+      <section id="contact" class="section" aria-labelledby="contactHeading">
+        <div class="container">
+          <div class="section-header text-center reveal">
+            <span class="section-kicker">Get In Touch</span>
+            <h2 id="contactHeading" class="section-title">Contact Information</h2>
+            <p class="section-description">
+              I am eager to connect regarding academic discussions, software collaboration,
+              internship opportunities, or innovative technology projects.
+            </p>
+          </div>
+
+          <div class="grid-3 reveal">
+            <!-- Contact Box 1: Email (Functional mailto: hyperlink) -->
+            <div class="card text-center" style="text-align: center;">
+              <span class="section-kicker">Direct Communication</span>
+              <h3 class="card-title" style="font-size: 1.2rem;">Email Address</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 1rem;">
+                Reach me directly via email. Click the button to launch your default email client.
+              </p>
+              <div style="margin-bottom: 1.25rem;">
+                <a
+                  href="mailto:tonnychibambo@gmail.com"
+                  class="btn btn-primary btn-sm"
+                  title="Send email to Tonny Chibambo"
+                >
+                  Send Email: tonnychibambo@gmail.com
+                </a>
+              </div>
+              <div>
+                <button
+                  type="button"
+                  class="btn btn-secondary btn-sm btn-copy"
+                  data-copy="tonnychibambo@gmail.com"
+                >
+                  Copy Email Address
+                </button>
+              </div>
+            </div>
+
+            <!-- Contact Box 2: GitHub Profile -->
+            <div class="card text-center" style="text-align: center;">
+              <span class="section-kicker">Code Repositories</span>
+              <h3 class="card-title" style="font-size: 1.2rem;">GitHub Profile</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 1rem;">
+                Inspect source repositories, academic projects, and software contributions.
+              </p>
+              <div style="margin-bottom: 1.25rem;">
+                <a
+                  href="https://github.com/TONNY-TED"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-outline btn-sm"
+                >
+                  Visit GitHub Profile &rarr;
+                </a>
+              </div>
+              <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--color-text-muted);">
+                https://github.com/TONNY-TED
+              </span>
+            </div>
+
+            <!-- Contact Box 3: Professional Network & Location -->
+            <div class="card text-center" style="text-align: center;">
+              <span class="section-kicker">Professional Network</span>
+              <h3 class="card-title" style="font-size: 1.2rem;">LinkedIn & Location</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 1rem;">
+                Connect professionally on LinkedIn or coordinate academic meetings.
+              </p>
+              <div style="margin-bottom: 1.25rem;">
+                <a
+                  href="https://www.linkedin.com/in/tonny-chibambo-2b9249334/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary btn-sm"
+                >
+                  Connect on LinkedIn &rarr;
+                </a>
+              </div>
+              <span style="font-size: 0.85rem; font-family: var(--font-mono); color: var(--color-text-secondary);">
+                Base: <strong>Blantyre, Malawi</strong>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =====================================================================
+         LIGHTBOX MODAL
+         ===================================================================== -->
+    <div
+      id="lightboxModal"
+      class="lightbox-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+      aria-label="Image Preview Modal"
+    >
+      <div class="lightbox-content">
+        <img id="lightboxImg" class="lightbox-img" src="" alt="Enlarged view" />
+        <div class="lightbox-caption">
+          <div class="lightbox-caption-text">
+            <strong id="lightboxCaption">Image Preview</strong>
+            <span>Placeholder container - easily replaceable with your photograph</span>
+          </div>
+          <button id="lightboxClose" class="lightbox-close-btn" type="button" aria-label="Close modal">
+            &times;
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- =====================================================================
+         SITE FOOTER
+         ===================================================================== -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <h4>TONNY CHIBAMBO</h4>
+            <p>
+              Computer Science Student & Software Developer. Dedicated to building innovative,
+              resilient software solutions and exploring modern technology frontiers.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h5>Navigation</h5>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Me</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="animations.html">Animated Concepts</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h5>Connect</h5>
+            <ul class="footer-links">
+              <li>
+                <a href="mailto:tonnychibambo@gmail.com" title="Send email to Tonny Chibambo">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                  <span>tonnychibambo@gmail.com</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/TONNY-TED" target="_blank" rel="noopener noreferrer" title="Tonny Chibambo GitHub Profile">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                  <span>GitHub</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/tonny-chibambo-2b9249334/" target="_blank" rel="noopener noreferrer" title="Tonny Chibambo LinkedIn Profile">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                  <span>LinkedIn</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2026 <strong>TONNY CHIBAMBO</strong>. Academic Portfolio. Built with HTML5, CSS3 & JavaScript.
+          </p>
+          <p>
+            <span>Blantyre, Malawi</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
